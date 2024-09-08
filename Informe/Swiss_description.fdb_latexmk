@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1725768129.64667 "c:/Users/RUBEN/Desktop/Ultima revision de todos/Analisis_Swiss/Informe/Swiss_description.tex" "Swiss_description.pdf" "Swiss_description" 1725768131.30646 0
+["pdflatex"] 1725820183.01414 "c:/Users/RUBEN/Desktop/Ultima revision de todos/Analisis_Swiss/Informe/Swiss_description.tex" "Swiss_description.pdf" "Swiss_description" 1725820184.61228 0
   "C:/Users/RUBEN/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1725323480 80909 eab91d9745dd2edfd62a31d53cd5fe15 ""
   "C:/Users/RUBEN/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/tcrm1000.pk" 1722464689 11548 1b6a1cebb0451d3a16d78f551c73072d ""
   "C:/Users/RUBEN/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1720817809 24264717 9c2464dfce8cce5235f08e9052898b87 ""
@@ -49,6 +49,7 @@
   "C:/Users/RUBEN/AppData/Local/Programs/MiKTeX/tex/latex/caption/caption3.sty" 1696169587 72619 ee90b6612147680fd73c3b1406a74245 ""
   "C:/Users/RUBEN/AppData/Local/Programs/MiKTeX/tex/latex/collectbox/collectbox.sty" 1667300686 9124 59c3b56f1a073de66e3eea35f9c173c8 ""
   "C:/Users/RUBEN/AppData/Local/Programs/MiKTeX/tex/latex/epstopdf-pkg/epstopdf-base.sty" 1623003186 13886 d1306dcf79a944f6988e688c1785f9ce ""
+  "C:/Users/RUBEN/AppData/Local/Programs/MiKTeX/tex/latex/float/float.sty" 1469023953 6916 16d2656a1984957e674b149555f1ea1d ""
   "C:/Users/RUBEN/AppData/Local/Programs/MiKTeX/tex/latex/graphics-cfg/graphics.cfg" 1465894292 1224 978390e9c2234eab29404bc21b268d1e ""
   "C:/Users/RUBEN/AppData/Local/Programs/MiKTeX/tex/latex/graphics-def/pdftex.def" 1713599642 19440 9da9dcbb27470349a580fca7372d454b ""
   "C:/Users/RUBEN/AppData/Local/Programs/MiKTeX/tex/latex/graphics/graphics.sty" 1718270727 18363 b79c83eab17bf475b508f05e9807e605 ""
@@ -77,9 +78,9 @@
   "Swiss/Fertility_dispersion.png" 1725765925 27818 1e683c2949360f29651152b099fafce4 ""
   "Swiss/Infant.Mortality_central.png" 1725765925 26776 bada04e69f076d88c55a80e4e449ba85 ""
   "Swiss/Infant.Mortality_dispersion.png" 1725765925 28952 b7d503ff99f4c777fefb89577a0af701 ""
-  "Swiss_description.aux" 1725768131 3532 69d1572c3ed524a2d6b17d4f92a7d7e2 "pdflatex"
-  "Swiss_description.tex" 1725768126 13197 bd64dddb7cef1309bb98785b8b8b1752 ""
-  "c:/Users/RUBEN/Desktop/Ultima revision de todos/Analisis_Swiss/Informe/Swiss_description.tex" 1725768126 13197 bd64dddb7cef1309bb98785b8b8b1752 ""
+  "Swiss_description.aux" 1725820184 3405 ffa16d7faab97710d226749fd1f330b2 "pdflatex"
+  "Swiss_description.tex" 1725820182 12924 16c1f24852ba5cee4f9358ef58770f92 ""
+  "c:/Users/RUBEN/Desktop/Ultima revision de todos/Analisis_Swiss/Informe/Swiss_description.tex" 1725820182 12924 16c1f24852ba5cee4f9358ef58770f92 ""
   (generated)
   "Swiss_description.aux"
   "Swiss_description.log"

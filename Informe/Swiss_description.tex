@@ -5,7 +5,7 @@
 \usepackage{booktabs}
 \usepackage{caption}
 \usepackage{adjustbox}
-
+\usepackage{float}
 
 \title{Informe de Análisis Exploratorio de \texttt{swiss}}
 \author{
@@ -23,29 +23,18 @@
 \section{Introducción}
 El dataset ``swiss'' contiene datos sobre 47 cantones suizos en 1888. Este análisis proporciona una visión detallada de las variables relacionadas con la fertilidad, la agricultura, y la educación.
 
-\section{Descripción de las Variables}
-El dataset ``swiss'' incluye las siguientes variables:
-\begin{itemize}
-    \item \textbf{Fertility}: Tasa de fertilidad (número de hijos por mujer).
-    \item \textbf{Agriculture}: Proporción de trabajadores en agricultura.
-    \item \textbf{Examination}: Proporción de jóvenes con educación secundaria.
-    \item \textbf{Education}: Proporción de población con educación secundaria.
-    \item \textbf{Catholic}: Proporción de población católica.
-    \item \textbf{Infant.Mortality}: Tasa de mortalidad infantil (número de muertes por 1000 nacidos vivos).
-\end{itemize}
-
 \section*{Análisis Descriptivo}
 
-1. \textbf{Fertility}:
-\begin{figure}[h!]
+1. \textbf{Fertility}: Tasa de fertilidad (número de hijos por mujer).
+\begin{figure}[H]
  \centering
- \includegraphics[width=\textwidth]{Swiss/Fertility_central.png}
+ \includegraphics[width=0.5\textwidth]{Swiss/Fertility_central.png}
  \caption{Medidas centrales de Fertilidad}
 \end{figure}
 
-\begin{figure}[h!]
+\begin{figure}[H]
  \centering
- \includegraphics[width=\textwidth]{Swiss/Fertility_dispersion.png}
+ \includegraphics[width=0.5\textwidth]{Swiss/Fertility_dispersion.png}
  \caption{Medidas de dispersión de Fertilidad}
 \end{figure}
 
@@ -61,22 +50,22 @@ El dataset ``swiss'' incluye las siguientes variables:
        \item El coeficiente de variación es 17.81, lo que indica una variabilidad del 17.8\% respecto a la media.
    \end{itemize}
 
-   \begin{figure}[h!]
+   \begin{figure}[H]
     \centering
-    \includegraphics[width=\textwidth]{Histogramas/histogram_fertility.png}
+    \includegraphics[width=0.5\textwidth]{Histogramas/histogram_fertility.png}
     \caption{Distribución de la Tasa de Fertilidad}
     \end{figure}
 
-2. \textbf{Agriculture}:
-\begin{figure}[h!]
+2. \textbf{Agriculture}: Proporción de trabajadores en agricultura.
+\begin{figure}[H]
     \centering
-    \includegraphics[width=\textwidth]{Swiss/Agriculture_central.png}
+    \includegraphics[width=0.5\textwidth]{Swiss/Agriculture_central.png}
     \caption{Medidas centrales de Agricultura}
 \end{figure}
 
-\begin{figure}[h!]
+\begin{figure}[H]
     \centering
-    \includegraphics[width=\textwidth]{Swiss/Agriculture_dispersion.png}
+    \includegraphics[width=0.5\textwidth]{Swiss/Agriculture_dispersion.png}
     \caption{Medidas de dispersión de Agricultura}
 \end{figure}
 \begin{itemize}
@@ -92,22 +81,22 @@ El dataset ``swiss'' incluye las siguientes variables:
    \end{itemize}
 
 
-       \begin{figure}[h!]
+       \begin{figure}[H]
         \centering
-        \includegraphics[width=\textwidth]{Histogramas/histogram_agriculture.png}
+        \includegraphics[width=0.5\textwidth]{Histogramas/histogram_agriculture.png}
         \caption{Distribución de la Proporción de Trabajadores en Agricultura}
         \end{figure}
    
-   3. \textbf{Examination}:
-   \begin{figure}[h!]
+   3. \textbf{Examination}: Proporción de jóvenes con educación secundaria.
+   \begin{figure}[H]
  \centering
- \includegraphics[width=\textwidth]{Swiss/Examination_central.png}
+ \includegraphics[width=0.5\textwidth]{Swiss/Examination_central.png}
  \caption{Medidas centrales de Exámenes}
 \end{figure}
 
-\begin{figure}[h!]
+\begin{figure}[H]
  \centering
- \includegraphics[width=\textwidth]{Swiss/Examination_dispersion.png}
+ \includegraphics[width=0.5\textwidth]{Swiss/Examination_dispersion.png}
  \caption{Medidas de dispersión de Exámenes}
 \end{figure}
    \begin{itemize}
@@ -122,23 +111,23 @@ El dataset ``swiss'' incluye las siguientes variables:
        \item El coeficiente de variación es 48.38, lo que indica una alta variabilidad respecto a la media.
    \end{itemize}
 
-   \begin{figure}[h!]
+   \begin{figure}[H]
     \centering
-    \includegraphics[width=\textwidth]{Histogramas/histogram_examination.png}
+    \includegraphics[width=0.5\textwidth]{Histogramas/histogram_examination.png}
     \caption{Distribución de la Proporción de Jóvenes con Educación Secundaria}
     \end{figure}
 
-4. \textbf{Education}:
+4. \textbf{Education}: Proporción de población con educación secundaria.
 
-   \begin{figure}[h!]
+   \begin{figure}[H]
     \centering
-    \includegraphics[width=\textwidth]{Swiss/Education_central.png}
+    \includegraphics[width=0.5\textwidth]{Swiss/Education_central.png}
     \caption{Medidas centrales de Educación}
 \end{figure}
 
-\begin{figure}[h!]
+\begin{figure}[H]
     \centering
-    \includegraphics[width=\textwidth]{Swiss/Education_dispersion.png}
+    \includegraphics[width=0.5\textwidth]{Swiss/Education_dispersion.png}
     \caption{Medidas de dispersión de Educación}
 \end{figure}
    \begin{itemize}
@@ -153,22 +142,22 @@ El dataset ``swiss'' incluye las siguientes variables:
        \item El coeficiente de variación es 87.58, indicando una variabilidad muy alta respecto a la media.
    \end{itemize}
 
-   \begin{figure}[h!]
+   \begin{figure}[H]
     \centering
-    \includegraphics[width=\textwidth]{Histogramas/histogram_education.png}
+    \includegraphics[width=0.5\textwidth]{Histogramas/histogram_education.png}
     \caption{Distribución de la Proporción de Población con Educación Secundaria}
     \end{figure}
 
-5. \textbf{Catholic}:
-\begin{figure}[h!]
+5. \textbf{Catholic}: Proporción de población católica.
+\begin{figure}[H]
  \centering
- \includegraphics[width=\textwidth]{Swiss/Catholic_central.png}
+ \includegraphics[width=0.5\textwidth]{Swiss/Catholic_central.png}
  \caption{Medidas centrales de Población Católica}
 \end{figure}
 
-\begin{figure}[h!]
+\begin{figure}[H]
  \centering
- \includegraphics[width=\textwidth]{Swiss/Catholic_dispersion.png}
+ \includegraphics[width=0.5\textwidth]{Swiss/Catholic_dispersion.png}
  \caption{Medidas de dispersión de Población Católica}
 \end{figure}
    \begin{itemize}
@@ -183,23 +172,23 @@ El dataset ``swiss'' incluye las siguientes variables:
        \item El coeficiente de variación es 101.36, lo que indica una variabilidad extremadamente alta respecto a la media.
    \end{itemize}
 
-   \begin{figure}[h!]
+   \begin{figure}[H]
     \centering
-    \includegraphics[width=\textwidth]{Histogramas/histogram_catholic.png}
+    \includegraphics[width=0.5\textwidth]{Histogramas/histogram_catholic.png}
     \caption{Distribución de la Proporción de Población Católica}
     \end{figure}
 
 
-6. \textbf{Infant Mortality}:
-\begin{figure}[h!]
+6. \textbf{Infant Mortality}: Tasa de mortalidad infantil (número de muertes por 1000 nacidos vivos).
+\begin{figure}[H]
  \centering
- \includegraphics[width=\textwidth]{Swiss/Infant.Mortality_central.png}
+ \includegraphics[width=0.5\textwidth]{Swiss/Infant.Mortality_central.png}
  \caption{Medidas centrales de Mortalidad Infantil}
 \end{figure}
 
-\begin{figure}[h!]
+\begin{figure}[H]
     \centering
-    \includegraphics[width=\textwidth]{Swiss/Infant.Mortality_dispersion.png}
+    \includegraphics[width=0.5\textwidth]{Swiss/Infant.Mortality_dispersion.png}
     \caption{Medidas de dispersión de Mortalidad Infantil}
 \end{figure}
 \begin{itemize}
@@ -214,9 +203,9 @@ El dataset ``swiss'' incluye las siguientes variables:
     \item El coeficiente de variación es 14.61, lo que sugiere una baja variabilidad respecto a la media.
 \end{itemize}
 
-\begin{figure}[h!]
+\begin{figure}[H]
 \centering
-\includegraphics[width=\textwidth]{Histogramas/histogram_infant_mortality.png}
+\includegraphics[width=0.5\textwidth]{Histogramas/histogram_infant_mortality.png}
 \caption{Distribución de la Tasa de Mortalidad Infantil}
 \end{figure}
 
