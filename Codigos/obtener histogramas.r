@@ -53,3 +53,14 @@ for (var in variables) {
   # Cerrar el dispositivo gráfico para guardar la imagen
   dev.off()
 }
+#4. Crear el heatmap
+ggplot(data = correlation_melted, aes(x = Var1, y = Var2, fill = value)) +
+  geom_tile() +
+  scale_fill_gradient2(low = "blue", high = "red", mid = "white", 
+                       midpoint = 0, limit = c(-1, 1), 
+                       name = "Correlación") +
+  theme_minimal() +
+  labs(title = "Matriz de Correlación del Dataset Swiss", 
+       x = "Variables", 
+       y = "Variables") +
+  theme(axis.text.x = element_text(angle = 45, hjust = 1))
