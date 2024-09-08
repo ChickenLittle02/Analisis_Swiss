@@ -18,6 +18,14 @@
 
 \maketitle
 
+
+
+
+
+
+
+
+
 \section{Introducción}
 El dataset ``swiss'' contiene datos sobre 47 cantones suizos en 1888. Este análisis proporciona una visión detallada de las variables relacionadas con la fertilidad, la agricultura, y la educación.
 
@@ -32,115 +40,184 @@ El dataset ``swiss'' incluye las siguientes variables:
     \item \textbf{Infant.Mortality}: Tasa de mortalidad infantil (número de muertes por 1000 nacidos vivos).
 \end{itemize}
 
-\section{Análisis Descriptivo}
-A continuación, se presentan los resultados del análisis descriptivo para cada variable.
+\section*{Análisis Descriptivo}
 
-\subsection{Fertility}
-\begin{itemize}
-    \item \textbf{Media}: 68.15
-    \item \textbf{Mediana}: 69.40
-    \item \textbf{Moda}: 69.40
-    \item \textbf{Simetría}: -0.10
-    \item \textbf{Curtosis}: -0.57
-    \item \textbf{Varianza}: 125.96
-    \item \textbf{Desviación Estándar}: 11.22
-    \item \textbf{Rango}: 60.80
-    \item \textbf{Coeficiente de Variación}: 16.48\%
-\end{itemize}
-
+1. \textbf{Fertility}:
 \begin{figure}[h!]
-\centering
-\includegraphics[width=\textwidth]{Histogramas/histogram_fertility.png}
-\caption{Distribución de la Tasa de Fertilidad}
+ \centering
+ \includegraphics[width=\textwidth]{Swiss/Fertility_central.png}
+ \caption{Medidas centrales de Fertilidad}
 \end{figure}
 
-\subsection{Agriculture}
-\begin{itemize}
-    \item \textbf{Media}: 41.47
-    \item \textbf{Mediana}: 39.45
-    \item \textbf{Moda}: 39.45
-    \item \textbf{Simetría}: 0.29
-    \item \textbf{Curtosis}: -0.66
-    \item \textbf{Varianza}: 142.47
-    \item \textbf{Desviación Estándar}: 11.94
-    \item \textbf{Rango}: 59.30
-    \item \textbf{Coeficiente de Variación}: 28.85\%
-\end{itemize}
-
 \begin{figure}[h!]
-\centering
-\includegraphics[width=\textwidth]{Histogramas/histogram_agriculture.png}
-\caption{Distribución de la Proporción de Trabajadores en Agricultura}
+ \centering
+ \includegraphics[width=\textwidth]{Swiss/Fertility_dispersion.png}
+ \caption{Medidas de dispersión de Fertilidad}
 \end{figure}
 
-\subsection{Examination}
-\begin{itemize}
-    \item \textbf{Media}: 14.21
-    \item \textbf{Mediana}: 13.60
-    \item \textbf{Moda}: 13.60
-    \item \textbf{Simetría}: 0.35
-    \item \textbf{Curtosis}: -0.28
-    \item \textbf{Varianza}: 23.85
-    \item \textbf{Desviación Estándar}: 4.88
-    \item \textbf{Rango}: 20.20
-    \item \textbf{Coeficiente de Variación}: 34.35\%
-\end{itemize}
+   \begin{itemize}
+       \item La media es 70.14, indicando el promedio del índice de fertilidad.
+       \item La mediana es 70.4, lo que sugiere que la mitad de los valores están por debajo de este nivel.
+       \item La moda es 65, el valor más frecuente en los datos de fertilidad.
+       \item La simetría negativa (-0.46) sugiere una ligera inclinación hacia la izquierda, lo que implica que hay más valores altos que bajos.
+       \item La curtosis de 3.26 indica una distribución ligeramente más apuntada que una distribución normal.
+       \item La varianza es 156.04, reflejando una dispersión moderada de los datos.
+       \item La desviación estándar es 12.49, mostrando una variabilidad significativa en los índices de fertilidad.
+       \item El rango es 57.5, lo que indica una diferencia considerable entre el valor más alto y el más bajo.
+       \item El coeficiente de variación es 17.81, lo que indica una variabilidad del 17.8\% respecto a la media.
+   \end{itemize}
 
+   \begin{figure}[h!]
+    \centering
+    \includegraphics[width=\textwidth]{Histogramas/histogram_fertility.png}
+    \caption{Distribución de la Tasa de Fertilidad}
+    \end{figure}
+
+2. \textbf{Agriculture}:
 \begin{figure}[h!]
-\centering
-\includegraphics[width=\textwidth]{Histogramas/histogram_examination.png}
-\caption{Distribución de la Proporción de Jóvenes con Educación Secundaria}
+    \centering
+    \includegraphics[width=\textwidth]{Swiss/Agriculture_central.png}
+    \caption{Medidas centrales de Agricultura}
 \end{figure}
 
-\subsection{Education}
-\begin{itemize}
-    \item \textbf{Media}: 12.67
-    \item \textbf{Mediana}: 12.45
-    \item \textbf{Moda}: 12.45
-    \item \textbf{Simetría}: 0.12
-    \item \textbf{Curtosis}: -0.43
-    \item \textbf{Varianza}: 14.53
-    \item \textbf{Desviación Estándar}: 3.81
-    \item \textbf{Rango}: 15.70
-    \item \textbf{Coeficiente de Variación}: 30.10\%
-\end{itemize}
-
 \begin{figure}[h!]
-\centering
-\includegraphics[width=\textwidth]{Histogramas/histogram_education.png}
-\caption{Distribución de la Proporción de Población con Educación Secundaria}
+    \centering
+    \includegraphics[width=\textwidth]{Swiss/Agriculture_dispersion.png}
+    \caption{Medidas de dispersión de Agricultura}
+\end{figure}
+\begin{itemize}
+    \item La media es 50.66, lo que representa el porcentaje promedio de personas dedicadas a la agricultura.
+       \item La mediana es 54.1, lo que sugiere que la mitad de las observaciones tienen un valor menor o igual a 54.1.
+       \item La moda es 1.2, el valor más común en los datos de agricultura.
+       \item La simetría negativa (-0.32) indica una ligera inclinación hacia la izquierda.
+       \item La curtosis de 2.11 sugiere una distribución algo más plana en comparación con una distribución normal.
+       \item La varianza es 515.8, reflejando una alta dispersión en los datos de agricultura.
+       \item La desviación estándar es 22.71, mostrando una alta variabilidad respecto a la media.
+       \item El rango es 88.5, indicando una gran diferencia entre el valor más alto y el más bajo.
+       \item El coeficiente de variación es 44.83, lo que indica una alta variabilidad respecto a la media.
+   \end{itemize}
+
+
+       \begin{figure}[h!]
+        \centering
+        \includegraphics[width=\textwidth]{Histogramas/histogram_agriculture.png}
+        \caption{Distribución de la Proporción de Trabajadores en Agricultura}
+        \end{figure}
+   
+   3. \textbf{Examination}:
+   \begin{figure}[h!]
+ \centering
+ \includegraphics[width=\textwidth]{Swiss/Examination_central.png}
+ \caption{Medidas centrales de Exámenes}
 \end{figure}
 
-\subsection{Catholic}
-\begin{itemize}
-    \item \textbf{Media}: 87.60
-    \item \textbf{Mediana}: 88.90
-    \item \textbf{Moda}: 88.90
-    \item \textbf{Simetría}: -0.32
-    \item \textbf{Curtosis}: -0.80
-    \item \textbf{Varianza}: 130.27
-    \item \textbf{Desviación Estándar}: 11.40
-    \item \textbf{Rango}: 50.50
-    \item \textbf{Coeficiente de Variación}: 13.02\%
-\end{itemize}
-
 \begin{figure}[h!]
-\centering
-\includegraphics[width=\textwidth]{Histogramas/histogram_catholic.png}
-\caption{Distribución de la Proporción de Población Católica}
+ \centering
+ \includegraphics[width=\textwidth]{Swiss/Examination_dispersion.png}
+ \caption{Medidas de dispersión de Exámenes}
+\end{figure}
+   \begin{itemize}
+       \item La media es 16.49, representando el promedio de la tasa de aprobación en exámenes.
+       \item La mediana es 16, lo que sugiere que la mitad de los valores están por debajo de este nivel.
+       \item La moda es 14, el valor más frecuente.
+       \item La simetría positiva (0.45) sugiere una ligera inclinación hacia la derecha.
+       \item La curtosis de 2.86 indica una distribución ligeramente más apuntada que la normal.
+       \item La varianza es 63.65, reflejando una dispersión considerable.
+       \item La desviación estándar es 7.98, indicando una variabilidad moderada.
+       \item El rango es 34, reflejando una gran diferencia entre el valor más alto y el más bajo.
+       \item El coeficiente de variación es 48.38, lo que indica una alta variabilidad respecto a la media.
+   \end{itemize}
+
+   \begin{figure}[h!]
+    \centering
+    \includegraphics[width=\textwidth]{Histogramas/histogram_examination.png}
+    \caption{Distribución de la Proporción de Jóvenes con Educación Secundaria}
+    \end{figure}
+
+4. \textbf{Education}:
+
+   \begin{figure}[h!]
+    \centering
+    \includegraphics[width=\textwidth]{Swiss/Education_central.png}
+    \caption{Medidas centrales de Educación}
 \end{figure}
 
-\subsection{Infant.Mortality}
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=\textwidth]{Swiss/Education_dispersion.png}
+    \caption{Medidas de dispersión de Educación}
+\end{figure}
+   \begin{itemize}
+       \item La media es 10.98, lo que indica el promedio del nivel de educación.
+       \item La mediana es 8, sugiriendo que la mitad de los valores están por debajo de este nivel.
+       \item La moda es 7, el valor más frecuente.
+       \item La simetría positiva (2.27) indica una fuerte inclinación hacia la derecha, con una cola larga hacia los valores altos.
+       \item La curtosis de 9.14 sugiere una distribución extremadamente apuntada.
+       \item La varianza es 92.46, reflejando una dispersión considerable en los niveles de educación.
+       \item La desviación estándar es 9.62, mostrando una alta variabilidad.
+       \item El rango es 52, reflejando una gran diferencia entre el valor más alto y el más bajo.
+       \item El coeficiente de variación es 87.58, indicando una variabilidad muy alta respecto a la media.
+   \end{itemize}
+
+   \begin{figure}[h!]
+    \centering
+    \includegraphics[width=\textwidth]{Histogramas/histogram_education.png}
+    \caption{Distribución de la Proporción de Población con Educación Secundaria}
+    \end{figure}
+
+5. \textbf{Catholic}:
+\begin{figure}[h!]
+ \centering
+ \includegraphics[width=\textwidth]{Swiss/Catholic_central.png}
+ \caption{Medidas centrales de Población Católica}
+\end{figure}
+
+\begin{figure}[h!]
+ \centering
+ \includegraphics[width=\textwidth]{Swiss/Catholic_dispersion.png}
+ \caption{Medidas de dispersión de Población Católica}
+\end{figure}
+   \begin{itemize}
+       \item La media es 41.14, representando el porcentaje promedio de población católica.
+       \item La mediana es 15.14, lo que sugiere que la mitad de las observaciones están por debajo de este valor.
+       \item La moda es 5.23, el valor más común.
+       \item La simetría positiva (0.48) indica una ligera inclinación hacia la derecha.
+       \item La curtosis de 1.33 indica una distribución más plana que una distribución normal.
+       \item La varianza es 1739.29, reflejando una dispersión extremadamente alta en los porcentajes de población católica.
+       \item La desviación estándar es 41.70, mostrando una gran variabilidad.
+       \item El rango es 97.85, lo que refleja una gran diferencia entre el valor más alto y el más bajo.
+       \item El coeficiente de variación es 101.36, lo que indica una variabilidad extremadamente alta respecto a la media.
+   \end{itemize}
+
+   \begin{figure}[h!]
+    \centering
+    \includegraphics[width=\textwidth]{Histogramas/histogram_catholic.png}
+    \caption{Distribución de la Proporción de Población Católica}
+    \end{figure}
+
+
+6. \textbf{Infant Mortality}:
+\begin{figure}[h!]
+ \centering
+ \includegraphics[width=\textwidth]{Swiss/Infant.Mortality_central.png}
+ \caption{Medidas centrales de Mortalidad Infantil}
+\end{figure}
+
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=\textwidth]{Swiss/Infant.Mortality_dispersion.png}
+    \caption{Medidas de dispersión de Mortalidad Infantil}
+\end{figure}
 \begin{itemize}
-    \item \textbf{Media}: 19.55
-    \item \textbf{Mediana}: 19.10
-    \item \textbf{Moda}: 19.10
-    \item \textbf{Simetría}: 0.24
-    \item \textbf{Curtosis}: -0.49
-    \item \textbf{Varianza}: 11.54
-    \item \textbf{Desviación Estándar}: 3.40
-    \item \textbf{Rango}: 14.60
-    \item \textbf{Coeficiente de Variación}: 17.40\%
+    \item La media es 19.94, lo que indica el promedio de la tasa de mortalidad infantil.
+    \item La mediana es 20, lo que sugiere que la mitad de los valores están por debajo de este nivel.
+    \item La moda es 18, el valor más frecuente.
+    \item La simetría negativa (-0.33) sugiere una ligera inclinación hacia la izquierda.
+    \item La curtosis de 3.78 indica una distribución algo más apuntada que una distribución normal.
+    \item La varianza es 8.48, reflejando una dispersión baja en la tasa de mortalidad infantil.
+    \item La desviación estándar es 2.91, mostrando una baja variabilidad respecto a la media.
+    \item El rango es 15.8, indicando una diferencia moderada entre el valor más alto y el más bajo.
+    \item El coeficiente de variación es 14.61, lo que sugiere una baja variabilidad respecto a la media.
 \end{itemize}
 
 \begin{figure}[h!]
@@ -148,6 +225,7 @@ A continuación, se presentan los resultados del análisis descriptivo para cada
 \includegraphics[width=\textwidth]{Histogramas/histogram_infant_mortality.png}
 \caption{Distribución de la Tasa de Mortalidad Infantil}
 \end{figure}
+
 
 \section{Conclusión}
 El análisis del dataset ``swiss'' muestra que las variables relacionadas con la fertilidad, la agricultura, y la educación tienen diferentes patrones de distribución y dispersión. La variabilidad en estas variables sugiere que los cantones suizos en 1888 tenían una amplia gama de características en términos de fertilidad, trabajo en agricultura, y nivel educativo.

@@ -1,94 +1,55 @@
-# Instalar ggplot2 si no está instalado
-if(!require(ggplot2)) {
-  install.packages("ggplot2")
+# Crear la carpeta "Histogramas" si no existe
+if (!dir.exists("Histogramas")) {
+  dir.create("Histogramas")
 }
 
-# Cargar ggplot2
-library(ggplot2)
+# Cargar el conjunto de datos swiss
+data(swiss)
 
-# Definir el directorio principal
-output_dir <- "Histogramas/"  # Cambia esto a tu directorio de salida
+# Crear una lista de nombres de las variables en swiss
+variables <- names(swiss)
 
-# Crear la carpeta principal si no existe
-if (!dir.exists(output_dir)) {
-  dir.create(output_dir)
-}
-
-# Función para guardar las imágenes en la carpeta raíz
-guardar_histograma <- function(data, variable, binwidth, title, xlabel, ylabel, file_name) {
-  # Crear y guardar el histograma
-  ggplot(data, aes_string(x = variable)) +
-    geom_histogram(binwidth = binwidth, fill = "skyblue", color = "black") +
-    labs(title = title, x = xlabel, y = ylabel) +
-    theme_minimal()
+# Iterar sobre cada variable y generar su histograma con las curvas de densidad
+for (var in variables) {
+  # Extraer la variable actual
+  variable <- swiss[[var]]
   
-  ggsave(filename = paste0(output_dir, file_name), width = 8, height = 6)
+  # Especificar el archivo de salida para guardar la imagen en la carpeta "Histogramas"
+  png(filename = paste0("Histogramas/histograma_", var, ".png"), width = 800, height = 600)
+  
+  # Crear el histograma
+  hist(variable, 
+       main = paste("Histograma de", var), 
+       xlab = var, 
+       ylab = "Frecuencia", 
+       col = "lightblue", 
+       border = "black", 
+       probability = TRUE)
+  
+  # Generar la secuencia de valores para las curvas de densidad
+  x <- seq(min(variable), max(variable), length = 100)
+  
+  # Curva de densidad normal
+  y_normal <- dnorm(x, mean = mean(variable), sd = sd(variable))
+  lines(x, y_normal, col = "red", lwd = 2)
+  
+  # Curva de densidad exponencial
+  y_exp <- dexp(x, rate = 1/mean(variable))
+  lines(x, y_exp, col = "blue", lwd = 2)
+  
+  # Curva de densidad uniforme
+  y_unif <- dunif(x, min = min(variable), max = max(variable))
+  lines(x, y_unif, col = "green", lwd = 2)
+  
+  # Curva de densidad chi-cuadrado
+  df <- 2  # Grados de libertad para la distribución chi-cuadrado
+  y_chi <- dchisq(x, df = df)
+  lines(x, y_chi, col = "purple", lwd = 2)
+  
+  # Agregar una leyenda
+  legend("topright", legend = c("Normal", "Exponencial", "Uniforme", "Chi-cuadrado"),
+         col = c("red", "blue", "green", "purple"), lwd = 2)
+  
+  # Cerrar el dispositivo gráfico para guardar la imagen
+  dev.off()
 }
-
-# Crear los histogramas y guardarlos en la carpeta raíz
-
-# Histograma para Fertility
-guardar_histograma(
-  data = swiss,
-  variable = "Fertility",
-  binwidth = 5,
-  title = "Distribución de la Tasa de Fertilidad",
-  xlabel = "Tasa de Fertilidad",
-  ylabel = "Frecuencia",
-  file_name = "histogram_fertility.png"
-)
-
-# Histograma para Agriculture
-guardar_histograma(
-  data = swiss,
-  variable = "Agriculture",
-  binwidth = 10,
-  title = "Distribución de la Proporción de Trabajadores en Agricultura",
-  xlabel = "Proporción de Trabajadores en Agricultura",
-  ylabel = "Frecuencia",
-  file_name = "histogram_agriculture.png"
-)
-
-# Histograma para Examination
-guardar_histograma(
-  data = swiss,
-  variable = "Examination",
-  binwidth = 2,
-  title = "Distribución de la Proporción de Jóvenes con Educación Secundaria",
-  xlabel = "Proporción de Jóvenes con Educación Secundaria",
-  ylabel = "Frecuencia",
-  file_name = "histogram_examination.png"
-)
-
-# Histograma para Education
-guardar_histograma(
-  data = swiss,
-  variable = "Education",
-  binwidth = 2,
-  title = "Distribución de la Proporción de Población con Educación Secundaria",
-  xlabel = "Proporción de Población con Educación Secundaria",
-  ylabel = "Frecuencia",
-  file_name = "histogram_education.png"
-)
-
-# Histograma para Catholic
-guardar_histograma(
-  data = swiss,
-  variable = "Catholic",
-  binwidth = 10,
-  title = "Distribución de la Proporción de Población Católica",
-  xlabel = "Proporción de Población Católica",
-  ylabel = "Frecuencia",
-  file_name = "histogram_catholic.png"
-)
-
-# Histograma para Infant.Mortality
-guardar_histograma(
-  data = swiss,
-  variable = "Infant.Mortality",
-  binwidth = 2,
-  title = "Distribución de la Tasa de Mortalidad Infantil",
-  xlabel = "Tasa de Mortalidad Infantil",
-  ylabel = "Frecuencia",
-  file_name = "histogram_infant_mortality.png"
-)

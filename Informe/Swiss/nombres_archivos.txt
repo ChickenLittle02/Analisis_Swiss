@@ -1,0 +1,13 @@
+Agriculture_central.png
+Agriculture_dispersion.png
+Catholic_central.png
+Catholic_dispersion.png
+Education_central.png
+Education_dispersion.png
+Examination_central.png
+Examination_dispersion.png
+Fertility_central.png
+Fertility_dispersion.png
+Infant.Mortality_central.png
+Infant.Mortality_dispersion.png
+script_nombre.sh
