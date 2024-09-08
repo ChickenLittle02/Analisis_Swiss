@@ -88,6 +88,8 @@ INPUT C:\Users\RUBEN\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmsy6.tfm
 INPUT C:\Users\RUBEN\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmex10.tfm
 INPUT C:\Users\RUBEN\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\cmextra\cmex8.tfm
 INPUT C:\Users\RUBEN\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\cmextra\cmex7.tfm
+OUTPUT Swiss_description.pdf
+INPUT C:\Users\RUBEN\AppData\Local\MiKTeX\fonts\map\pdftex\pdftex.map
 INPUT C:\Users\RUBEN\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmr12.tfm
 INPUT C:\Users\RUBEN\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmbx12.tfm
 INPUT C:\Users\RUBEN\AppData\Local\Programs\MiKTeX\fonts\tfm\jknappen\ec\tcrm1000.tfm
@@ -96,7 +98,6 @@ INPUT .\Swiss\Fertility_central.png
 INPUT .\Swiss\Fertility_central.png
 INPUT .\Swiss\Fertility_central.png
 INPUT .\Swiss\Fertility_central.png
-OUTPUT Swiss_description.pdf
 INPUT .\Swiss\Fertility_central.png
 INPUT .\Swiss\Fertility_central.png
 INPUT .\Swiss\Fertility_central.png
@@ -107,7 +108,6 @@ INPUT .\Swiss\Fertility_dispersion.png
 INPUT .\Swiss\Fertility_dispersion.png
 INPUT .\Swiss\Fertility_dispersion.png
 INPUT .\Swiss\Fertility_dispersion.png
-INPUT C:\Users\RUBEN\AppData\Local\MiKTeX\fonts\map\pdftex\pdftex.map
 INPUT .\Histogramas\histogram_fertility.png
 INPUT .\Histogramas\histogram_fertility.png
 INPUT .\Histogramas\histogram_fertility.png
